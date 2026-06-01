@@ -1,5 +1,3 @@
-<p align="center">
-  <img src="assets/logo.png" alt="KeudeKu Logo" width="600px" style="border-radius: 12px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.35);" />
   <img src="assets/Aceh Hackathon 2026.png" alt="KeudeKu Hackathon Banner" width="600px" style="border-radius: 12px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.35);" />
 </p>
 
