@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-espresso-950: #120c0a; /* Roasted Dark Bean */
+  --color-espresso-900: #1e1412; /* Rich Espresso */
+  --color-espresso-800: #2d1d1a; /* Brewed Depth */
+  --color-espresso-700: #422d28; /* French Roast */
+  --color-espresso-600: #5c3e37; /* Warm Cappuccino */
+  --color-espresso-500: #8c5e52; /* Milk Chocolate Mocha */
+  --color-espresso-400: #aa7a6e; /* Sweet Latte */
+  --color-espresso-300: #c69f95; /* Frothed Cream */
+  --color-espresso-200: #ddc6c0; /* Warm Froth */
+  --color-espresso-100: #f2e7e4; /* Light Foam */
+  --color-espresso-50: #faf6f5;  /* Frosted White */
+
+  --color-accent-gold: #cfa873;  /* Golden Honey Accent */
+  --color-accent-amber: #e5a93b; /* Warm Caramel Accent */
+}
+
+:root {
+  --background: #faf6f5;
+  --foreground: #1e1412;
+  --card: #ffffff;
+  --card-foreground: #1e1412;
+  --popover: #ffffff;
+  --popover-foreground: #1e1412;
+  --primary: #422d28;
+  --primary-foreground: #faf6f5;
+  --secondary: #f2e7e4;
+  --secondary-foreground: #422d28;
+  --muted: #ddc6c0;
+  --muted-foreground: #5c3e37;
+  --accent: #cfa873;
+  --accent-foreground: #1e1412;
+  --destructive: #df4b30;
+  --destructive-foreground: #faf6f5;
+  --border: #ddc6c0;
+  --input: #ddc6c0;
+  --ring: #cfa873;
+}
+
+/* Enable premium dark-by-default styling for high-end aesthetics */
+.dark, :root {
+  --background: #120c0a;
+  --foreground: #faf6f5;
+  --card: #1e1412;
+  --card-foreground: #faf6f5;
+  --popover: #1e1412;
+  --popover-foreground: #faf6f5;
+  --primary: #cfa873;
+  --primary-foreground: #120c0a;
+  --secondary: #2d1d1a;
+  --secondary-foreground: #faf6f5;
+  --muted: #2d1d1a;
+  --muted-foreground: #aa7a6e;
+  --accent: #cfa873;
+  --accent-foreground: #120c0a;
+  --destructive: #e15241;
+  --destructive-foreground: #faf6f5;
+  --border: #2d1d1a;
+  --input: #2d1d1a;
+  --ring: #cfa873;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
